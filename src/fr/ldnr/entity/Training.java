@@ -29,5 +29,10 @@ public class Training {
 	public int getDurationInDays() {return durationInDays;}
 	public String getModality() {return modality;}
 	public double getPrice() {return price;}
+	
+	@Override
+	public String toString() {
+		return name + " (" + modality + ") - (" + description + ") - " + price + " €";
+	}
 
 }
