@@ -1,10 +1,18 @@
 package fr.ldnr.dao;
 
-public class TrainingDao {
+import fr.ldnr.entity.Training;
+import java.util.List;
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+/**
+ * DAO interface for accessing Formation data.
+ */
 
-	}
-
+public interface TrainingDao {
+	
+	List<Training> readAll();
+	
+	List<Training> readByKeyword(String keyword);
+	
+	List<Training> readByModality(String modality);
+	
 }
