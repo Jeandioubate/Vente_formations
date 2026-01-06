@@ -1,10 +1,33 @@
 package fr.ldnr.entity;
 
+/**
+ * Represents a training course.
+ */
+
 public class Training {
-
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+	
+	private int id;
+	private String name;
+	private String description;
+	private int durationInDays;
+	private String modality; // PRESENTIEL OR DISTANCIEL
+	private double price;
+	
+	
+	public Training(int id, String name, String description, int durationInDays, String modality, double price) {
+		this.id = id;
+		this.name = name;
+		this.description = description;
+		this.durationInDays = durationInDays;
+		this.modality = modality;
+		this.price = price;
 	}
+	
+	public int getId() {return id;}
+	public String getName() {return name;}
+	public String getDescription() {return description;}
+	public int getDurationInDays() {return durationInDays;}
+	public String getModality() {return modality;}
+	public double getPrice() {return price;}
 
 }
