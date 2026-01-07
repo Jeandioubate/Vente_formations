@@ -21,12 +21,12 @@ public class Main {
 			System.out.println("2 - Search by keywords");
 			System.out.println("3 - Trainings by modality");
 			System.out.println("0 - Exit");
-			System.out.println(" Your choice : ");
+			System.out.println("Your choice : ");
 			
 			String choice = scan.nextLine();
 			
 			if (choice.equals("0")) {
-				System.out.println("Goodbye0");
+				System.out.println("Goodbye");
 				break;
 			}
 			
@@ -35,6 +35,19 @@ public class Main {
 				case "1":
 					business.getAllTrainings()
 							.forEach(System.out::println);
+					break;
+				
+				case "2":
+					System.out.print("Keyword : ");
+					String keyword = scan.nextLine();
+					
+					try {
+						business.searchByKeyword(keyword)
+								.forEach(System.out::println);
+					} catch (IllegalArgumentException e) {
+						System.out.println(e.getMessage());
+					}
+					break;
 			
 			}
 			
