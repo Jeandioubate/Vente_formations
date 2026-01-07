@@ -32,7 +32,7 @@ public class Training {
 	
 	@Override
 	public String toString() {
-		return name + " (" + modality + ") - (" + description + ") - " + price + " €";
+		return id + " | (" + name + ") | " + description + " | (" + modality + ") | (" + durationInDays + ") | " + price + " €";
 	}
 
 }
