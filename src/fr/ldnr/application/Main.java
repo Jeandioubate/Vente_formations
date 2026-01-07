@@ -1,10 +1,10 @@
 package fr.ldnr.application;
 
-import fr.ldnr.entity.Training;
+
 import fr.ldnr.business.BusinessTraining;
 import fr.ldnr.dao.TrainingDaoImpl;
 
-import java.util.List;
+
 import java.util.Scanner;
 
 public class Main {
@@ -50,7 +50,7 @@ public class Main {
 					break;
 				
 				case "3":
-					System.out.print("Modality (1/2 ou presentiel/distanciel");
+					System.out.print("Modality (1/2 ou presentiel/distanciel : ");
 					String input = scan.nextLine();
 					
 					String modality = 
