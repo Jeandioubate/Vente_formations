@@ -48,6 +48,26 @@ public class Main {
 						System.out.println(e.getMessage());
 					}
 					break;
+				
+				case "3":
+					System.out.print("Modality (1/2 ou presentiel/distanciel");
+					String input = scan.nextLine();
+					
+					String modality = 
+							input.equals("1") || input.equalsIgnoreCase("presentiel")
+									? "PRESENTIEL"
+									: input.equals("2") || input.equalsIgnoreCase("distanciel")
+										? "DISTANCIEL"
+										: null;
+					
+					if (modality == null) {
+						System.out.println("Invalid modality");
+						break;
+					}
+					
+					business.filterByModality(modality)
+							.forEach(System.out::println);
+					break;
 			
 			}
 			
