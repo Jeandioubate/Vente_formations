@@ -68,11 +68,15 @@ public class Main {
 					business.filterByModality(modality)
 							.forEach(System.out::println);
 					break;
+					
+				default:
+					System.out.println("Invalid choice");
 			
 			}
 			
 		}
-			
+		
+		scan.close();
 	}
 
 }
