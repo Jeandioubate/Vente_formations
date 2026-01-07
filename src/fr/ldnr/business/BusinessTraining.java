@@ -19,5 +19,12 @@ public class BusinessTraining {
 	public List<Training> getAllTrainings() {
 		return trainingDao.readAll();
 	}
+	
+	public List<Training> searchByKeyword(String keyword) {
+		if (keyword == null || keyword.trim().isEmpty()) {
+			throw new IllegalArgumentException("Keyword must not be empty");
+		}
+		return trainingDao.readByKeyword(keyword);
+	}
 
 }
