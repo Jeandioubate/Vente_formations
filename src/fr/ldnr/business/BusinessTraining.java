@@ -26,5 +26,13 @@ public class BusinessTraining {
 		}
 		return trainingDao.readByKeyword(keyword);
 	}
+	
+	public List<Training> filterByModality(String modality) {
+		if (!modality.equalsIgnoreCase("PRESENTIEL") && 
+			!modality.equalsIgnoreCase("DISTANCIEL")) {
+			throw new IllegalArgumentException("Invalid modality");
+		}
+		return trainingDao.readByModality(modality);
+	}
 
 }
