@@ -1,9 +1,19 @@
 package fr.ldnr.business;
 
-public class BusinessTraining {
+import fr.ldnr.dao.TrainingDao;
+import fr.ldnr.entity.Training;
+import java.util.List;
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+/**
+ * Business logic for Training.
+ */
+
+public class BusinessTraining {
+	
+	private final TrainingDao trainingDao;
+
+	public  BusinessTraining(TrainingDao trainingDao) {
+		this.trainingDao = trainingDao;		
 
 	}
 
