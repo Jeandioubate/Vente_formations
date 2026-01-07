@@ -30,6 +30,14 @@ public class Main {
 				break;
 			}
 			
+			switch (choice) {
+			
+				case "1":
+					business.getAllTrainings()
+							.forEach(System.out::println);
+			
+			}
+			
 		}
 			
 	}
