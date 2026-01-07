@@ -8,7 +8,7 @@ import java.util.List;
 
 public class TrainingDaoImpl implements TrainingDao {
 	
-	private static final String URL = "jdbc:mariaDB://localhost:3308/Sales";
+	private static final String URL = "jdbc:mariadb://localhost:3308/Sales";
 	private static final String USER = "root";
 	private static final String PASSWORD = "fms2025";
 	
@@ -25,7 +25,7 @@ public class TrainingDaoImpl implements TrainingDao {
 				Training training = new Training(
 						rs.getInt("t_id"),
 						rs.getString("t_name"),
-						rs.getString("description"),
+						rs.getString("t_description"),
 						rs.getInt("t_time"),
 						rs.getString("t_modality"),
 						rs.getDouble("t_price")
@@ -55,7 +55,7 @@ public class TrainingDaoImpl implements TrainingDao {
 	            Training training = new Training(
 	                    rs.getInt("t_id"),
 	                    rs.getString("t_name"),
-	                    rs.getString("description"),
+	                    rs.getString("t_description"),
 	                    rs.getInt("t_time"),
 	                    rs.getString("t_modality"),
 	                    rs.getDouble("t_price")
@@ -86,7 +86,7 @@ public class TrainingDaoImpl implements TrainingDao {
 	            Training training = new Training(
 	                    rs.getInt("t_id"),
 	                    rs.getString("t_name"),
-	                    rs.getString("description"),
+	                    rs.getString("t_description"),
 	                    rs.getInt("t_time"),
 	                    rs.getString("t_modality"),
 	                    rs.getDouble("t_price")
