@@ -13,6 +13,24 @@ public class Main {
 		
 		BusinessTraining business = new BusinessTraining(new TrainingDaoImpl());
 		Scanner scan = new Scanner(System.in);
+		
+		while (true) {
+			
+			System.out.println("\n=== MENU TRAININGS SALES ===");
+			System.out.println("1 - All trainings");
+			System.out.println("2 - Search by keywords");
+			System.out.println("3 - Trainings by modality");
+			System.out.println("0 - Exit");
+			System.out.println(" Your choice : ");
+			
+			String choice = scan.nextLine();
+			
+			if (choice.equals("0")) {
+				System.out.println("Goodbye0");
+				break;
+			}
+			
+		}
 			
 	}
 
