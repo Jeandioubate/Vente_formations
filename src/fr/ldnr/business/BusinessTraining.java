@@ -13,8 +13,11 @@ public class BusinessTraining {
 	private final TrainingDao trainingDao;
 
 	public  BusinessTraining(TrainingDao trainingDao) {
-		this.trainingDao = trainingDao;		
-
+		this.trainingDao = trainingDao;
+	}
+	
+	public List<Training> getAllTrainings() {
+		return trainingDao.readAll();
 	}
 
 }
