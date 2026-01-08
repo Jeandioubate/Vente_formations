@@ -2,6 +2,13 @@ package fr.ldnr.application;
 
 
 import fr.ldnr.business.BusinessTraining;
+
+/**
+ * Classe principale de l'application.
+ * Elle contient le point d'entrée du programme et permet à l'utilisateur
+ * d'interagir avec l'application via un menu console afin de consulter
+ * les formations disponibles.
+ */
 import fr.ldnr.dao.TrainingDaoImpl;
 
 
