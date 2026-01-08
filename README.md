@@ -32,15 +32,10 @@ L'application permet à l'utilisateur de :
 * Application console
 
 fr.ldnr
- ├── application
- │    └── Main.java
- ├── business
- │    └── BusinessTraining.java
- ├── dao
- │    ├── TrainingDao.java
- │    └── TrainingDaoImpl.java
- └── entity
-      └── Training.java
+  application (Main.java)
+  business (BusinessTraining.java)
+  dao (TrainingDao.java; TrainingDaoImpl.java)
+  entity (Training.java)
 
 ## Prérequis
 
